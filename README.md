@@ -1,48 +1,36 @@
-# PadMe-AI-Workstation
-Building the ultimate AI-powered engineering workstation for software development, IT management, cybersecurity, automation, and knowledge engineering.
+# PadMe AI Workstation
 
+> Reference implementation of the PadMe Engineering Platform.
 
-> Building an AI-native engineering environment for the next decade.
+PadMe AI Workstation is an AI-native engineering environment designed for software development, IT management, cybersecurity, automation, and knowledge engineering.
+
+It is not just a collection of tools. It is the first implementation of a broader platform built around specialized agents, persistent memory, multi-model orchestration, reproducible configuration, and automation.
+
+---
+
+## Version
+
+**Version:** 0.1.0  
+**Codename:** Genesis  
+**Status:** Foundation design
 
 ---
 
 ## Vision
 
-PadMe AI Workstation is not another collection of AI tools.
+PadMe exists to create an engineering environment where humans and artificial intelligence collaborate naturally, preserve knowledge, automate repetitive work, and continuously improve the quality of software, infrastructure, and technical decisions.
 
-It is a complete engineering ecosystem designed to augment software development, IT operations, cybersecurity, automation, and technical decision-making through specialized AI agents.
-
-Instead of relying on a single model, PadMe orchestrates multiple AI systems, each performing the tasks they are best suited for.
-
-The objective is simple:
-
-> **Use the best intelligence for every problem.**
-
----
-
-## Core Principles
-
-- AI-first engineering
-- Multi-model orchestration
-- Persistent memory
-- Reproducible environments
-- Infrastructure as code
-- Automation over repetition
-- Knowledge preservation
-- Continuous evolution
+The workstation is the local implementation. The platform is the long-term architecture.
 
 ---
 
 ## Architecture
 
-
 ```mermaid
 flowchart TD
 
     User[Pablo / IT Manager / Developer]
-
     User --> VSCode[Visual Studio Code]
-
     VSCode --> OpenCode[OpenCode Agent]
     OpenCode --> GentleAI[Gentle-AI Framework]
 
@@ -59,7 +47,6 @@ flowchart TD
     MCP --> Ollama[Ollama Local AI]
 
     GentleAI --> Models[Model Router]
-
     Models --> GPT[GPT]
     Models --> Claude[Claude]
     Models --> Gemini[Gemini]
@@ -68,7 +55,6 @@ flowchart TD
     Models --> LocalModels[Local Models]
 
     GentleAI --> Agents[Specialized Agents]
-
     Agents --> Architect[PadMe Architect]
     Agents --> Developer[PadMe Senior Developer]
     Agents --> Reviewer[PadMe Code Reviewer]
@@ -78,82 +64,76 @@ flowchart TD
     Agents --> Docs[PadMe Documentation]
 ```
 
-  👨‍💻 Arquitecto
+---
 
-  👨‍💻 Senior Developer
+## Core Principles
 
-  🔍 Code Reviewer
+- **Human First**: AI assists, but humans remain accountable for critical decisions.
+- **Best Tool for Every Task**: no single model or tool is assumed to be ideal for everything.
+- **Everything as Code**: configurations, prompts, agents, scripts, and decisions are versioned.
+- **Memory over Context**: important knowledge should persist beyond a single chat or session.
+- **Reproducibility**: the environment should be rebuildable from documentation and scripts.
+- **Vendor Independence**: the platform must avoid depending on a single AI provider.
+- **Automation by Default**: repeated manual work should become automated workflows.
 
-  🔐 CyberSecurity
+---
 
-  🏨 Hotel IT
+## Initial Roadmap
 
-  ☁ SharePoint Expert
+### Phase 0 — Genesis
 
-  🤖 Automation
+Define the vision, principles, scope, repository structure, and architectural decision process.
 
-  📊 Data Analyst
+### Phase 1 — Developer Workstation
 
-  📚 Documentation
+Install and document the local engineering environment: Visual Studio Code, Git, Docker, OpenCode, Gentle-AI, Engram, and Ollama.
 
-Luego
+### Phase 2 — Model Orchestration
 
-## Components
+Design the multi-model strategy: GPT, Claude, Gemini, Qwen, DeepSeek, local models, and provider routing.
 
-- Visual Studio Code
-- OpenCode
-- Gentle-AI
-- Engram
-- MCP
-- Docker
-- Git
-- Ollama
-- OpenRouter
-- GPT
-- Claude
-- Gemini
+### Phase 3 — MCP Ecosystem
 
+Integrate external tools and services through MCP: GitHub, Docker, databases, browser automation, Microsoft 365, SSH, and local AI.
 
-Después
+### Phase 4 — Agent Platform
 
-## Planned AI Agents
+Create specialized PadMe agents for architecture, development, review, security, hotel IT, automation, and documentation.
 
-- Architect
-- Senior Developer
-- Code Reviewer
-- Security Engineer
-- DevOps Engineer
-- Hotel IT Specialist
-- SharePoint Expert
-- Automation Engineer
-- Documentation Assistant
+### Phase 5 — Automation
 
+Convert repeated technical workflows into scripts, playbooks, and agent-assisted procedures.
 
-Después
+---
 
-## Roadmap
+## Repository Structure
 
-Phase 1
-- Foundations
+```text
+PadMe-AI-Workstation/
+├── docs/
+│   ├── 00-foundation/
+│   ├── 01-architecture/
+│   ├── 02-components/
+│   ├── 03-models/
+│   ├── 04-agents/
+│   ├── 05-mcp/
+│   ├── 06-memory/
+│   ├── 07-security/
+│   ├── 08-playbooks/
+│   └── 09-decisions/
+├── configs/
+├── agents/
+├── prompts/
+├── knowledge/
+├── scripts/
+├── mcp/
+├── templates/
+├── examples/
+└── assets/
+```
 
-Phase 2
-- Multi-model orchestration
+---
 
-Phase 3
-- MCP ecosystem
+## Motto
 
-Phase 4
-- Specialized agents
-
-Phase 5
-- Automation platform
-
-Phase 6
-- Local AI infrastructure
-
-Phase 7
-- Knowledge platform
-
-Y terminaría con una frase.
-
-> "The workstation should become smarter every day, not simply receive updates."
+> Design once. Learn forever. Automate everything.
