@@ -1,0 +1,110 @@
+padme:
+  version: "0.1.0"
+  codename: "Genesis"
+  identity:
+    type: "operational_ecosystem"
+    purpose: "Cultivate knowledge, amplify human capability, and preserve the evolution of the engineering journey."
+
+source_of_truth:
+  rule: "The repository is the canonical source of truth."
+  corollary: "Truth evolves as the garden grows."
+
+mechanism:
+  name: "The First Sprout"
+  description: "The initial operating mechanism used to cultivate PadMe while building it."
+  cycle:
+    - id: seed
+      name: "Seed"
+      meaning: "An idea, question, need, or tension appears."
+      output: "A candidate intention."
+    - id: desmalezar
+      name: "Desmalezar"
+      meaning: "Remove noise, reveal patterns, and discover the hidden path."
+      output: "A clearer problem or opportunity."
+    - id: habitat
+      name: "Habitat"
+      meaning: "Create the conditions where the revealed idea can grow."
+      output: "A coherent space, system, or context."
+    - id: gestation
+      name: "Gestation"
+      meaning: "Allow the idea to mature before implementation."
+      output: "A stable concept or decision candidate."
+    - id: cultivation
+      name: "Cultivation"
+      meaning: "Implement, document, connect, and care for the idea."
+      output: "A living artifact in the repository."
+    - id: metamorphosis
+      name: "Metamorphosis"
+      meaning: "A concept changes nature because the previous form became too small."
+      output: "A new identity, structure, or paradigm."
+    - id: fossil
+      name: "Fossil"
+      meaning: "Preserve evidence of how and why the idea evolved."
+      output: "Evolution memory."
+
+operating_questions:
+  - "What are we really trying to cultivate?"
+  - "Are we revealing a path or forcing one?"
+  - "What is noise, and what is signal?"
+  - "What must be preserved?"
+  - "What must be pruned?"
+  - "Does this help the garden evolve without losing its identity?"
+  - "Is this a tool, a capability, a system, or a domain?"
+  - "Does this decision belong in an ADR, RFC, journal, or canonical YAML?"
+
+states:
+  seed: "Potential exists."
+  growing: "The idea is being cultivated."
+  flourishing: "The idea is creating value."
+  pruning: "The idea needs simplification or redirection."
+  harvest: "The idea produced reusable knowledge."
+  reborn: "The idea transformed into a new form."
+
+systems:
+  - id: canon
+    name: "Canon System"
+    purpose: "Preserve the core laws, definitions, principles, and structured truth of PadMe."
+  - id: decision
+    name: "Decision System"
+    purpose: "Preserve important decisions through ADRs and RFCs."
+  - id: evolution
+    name: "Evolution System"
+    purpose: "Preserve transformations, fossils, snapshots, and garden memory."
+  - id: knowledge
+    name: "Knowledge System"
+    purpose: "Cultivate durable knowledge across domains."
+  - id: workstation
+    name: "Workstation System"
+    purpose: "Provide the reproducible local engineering environment."
+  - id: agent
+    name: "Agent System"
+    purpose: "Define companions and specialized agents."
+  - id: model
+    name: "Model System"
+    purpose: "Route capabilities to appropriate AI models and providers."
+  - id: integration
+    name: "Integration System"
+    purpose: "Connect PadMe with external tools and environments."
+  - id: automation
+    name: "Automation System"
+    purpose: "Transform repeated work into repeatable workflows."
+
+events:
+  - id: seed_discovered
+    name: "Seed Discovered"
+    description: "A meaningful idea, question, or tension appears."
+  - id: path_revealed
+    name: "Path Revealed"
+    description: "Desmalezar exposes a clearer direction."
+  - id: habitat_created
+    name: "Habitat Created"
+    description: "A new space exists where an idea can grow."
+  - id: decision_accepted
+    name: "Decision Accepted"
+    description: "An ADR or equivalent decision becomes part of the Canon."
+  - id: metamorphosis_detected
+    name: "Metamorphosis Detected"
+    description: "A concept changes nature and requires a new form."
+  - id: fossil_preserved
+    name: "Fossil Preserved"
+    description: "A meaningful transformation is recorded for future understanding."
